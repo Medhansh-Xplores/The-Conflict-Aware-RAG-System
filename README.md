@@ -1,4 +1,4 @@
-# 🌌 NebulaGears: Conflict-Aware RAG System  
+# The-Conflict-Aware-RAG-System  
 ### Google Gemini Flash + ChromaDB + Role-Based Policy Resolution
 
 This repository implements a **Conflict-Aware Retrieval-Augmented Generation (RAG)** system capable of answering internal company policy questions even when the underlying documents contain **conflicting rules**.  
