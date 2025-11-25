@@ -191,7 +191,7 @@ python main.py
 
 # 📸 **Required Screenshot**
 
-![Intern Query Output](/mnt/data/93afdd42-5cff-4412-b46d-08c064b32b23.png)
+![image alt](https://github.com/Medhansh-Xplores/The-Conflict-Aware-RAG-System/blob/main/intern_query_screenshot.png?raw=true)
 
 
 ---
