@@ -32,7 +32,7 @@ nebula-rag-conflict-aware/
 
 ---
 
-# 🚀 Pipeline Overview (Detailed)
+# 🚀 Pipeline Overview
 
 This project is intentionally split into **four modular steps** for clarity and correctness.
 
@@ -85,7 +85,7 @@ Instead of returning the document with the highest cosine similarity, this step 
 #### 1️⃣ Cosine Similarity  
 Standard semantic similarity based on text embeddings.
 
-#### 2️⃣ **Role Boost (Most Important)**  
+#### 2️⃣ **Role Boost**  
 If the document applies to the user’s role:
 
 ```
@@ -189,14 +189,14 @@ python main.py
 
 ---
 
-# 📸 **Required Screenshot**
+# 📸 **Screenshot**
 
 ![image alt](https://github.com/Medhansh-Xplores/The-Conflict-Aware-RAG-System/blob/main/intern_query_screenshot.png?raw=true)
 
 
 ---
 
-# 💰 **Cost Analysis (Required)**
+# 💰 **Cost Analysis**
 
 ### ⭐ Embedding Cost — 10,000 Documents
 Assuming 200 tokens/doc:
