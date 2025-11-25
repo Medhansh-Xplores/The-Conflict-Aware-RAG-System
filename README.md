@@ -1,9 +1,14 @@
-# NebulaGears: Conflict-Aware RAG System
+# 🌌 NebulaGears: Conflict-Aware RAG System  
 ### Google Gemini Flash + ChromaDB + Role-Based Policy Resolution
 
-This project implements a **Conflict-Aware Retrieval-Augmented Generation (RAG)** pipeline that uses **Google Gemini Flash** and **ChromaDB** to answer employee policy questions based on internal company documents — even when those documents contain **contradictory rules**.
+This project implements a **Conflict-Aware Retrieval-Augmented Generation (RAG)** system that uses **Google Gemini Flash** and **ChromaDB** to answer employee policy questions accurately — even when internal documents contain **conflicting information**.
 
-## Project Structure
+The system ensures the final answer is **role-specific, citation-backed, and conflict-resolved**, which is required because some documents contradict others.
+
+---
+
+# 📁 Repository Structure
+
 ```
 nebula-rag-conflict-aware/
 ├── step1_prepare_data.py
@@ -17,24 +22,77 @@ nebula-rag-conflict-aware/
     └── intern_query_screenshot.png
 ```
 
-## Pipeline Overview
+---
 
-### Step 1 — Data Preparation
-Prepares and structures policy documents into `prepared_docs.jsonl` with metadata.
+# 🚀 Pipeline Overview
 
-### Step 2 — Vector Store
-Embeds documents using Google `text-embedding-004` and stores them in ChromaDB.
+## 🟦 Step 1 — Data Preparation  
+Loads and cleans documents, splits them into chunks, adds metadata, and saves them into `prepared_docs.jsonl`.
 
-### Step 3 — Conflict-Aware Retrieval
-Ranks documents using cosine similarity + role boost + specificity boost + recency boost.
+## 🟦 Step 2 — Vector Store Creation  
+Embeds the text using Google `text-embedding-004` and stores embeddings + metadata in **ChromaDB**.
 
-### Step 4 — Final Answer Generation
-Uses Gemini Flash to generate a fully cited, role-correct final answer.
+## 🟦 Step 3 — Conflict-Aware Retrieval  
+Retrieves relevant chunks and applies:
 
-## Cost Analysis
-Embedding 10,000 documents ≈ **$0.04** (one-time)  
-Handling 5,000 daily queries ≈ **$1.12/month**
+- **Role Boost**
+- **Specificity Boost**
+- **Recency Boost**
 
-## Screenshot
-Insert your screenshot inside:
-`assets/intern_query_screenshot.png`
+Final score ensures the correct document wins even when policies conflict.
+
+## 🟦 Step 4 — Final Answer Generation  
+Uses **Gemini Flash** to generate:
+
+- Final ruling  
+- One citation  
+- Supporting quote  
+- Explanation why other documents were rejected  
+
+---
+
+# ▶️ How to Run
+
+```
+python step1_prepare_data.py
+python step2_build_vectorstore.py
+python step3_retrieve.py
+python step4_answer.py
+```
+
+Or run all:
+
+```
+python main.py
+```
+
+---
+
+# 📸 Required Screenshot
+
+Upload your result screenshot to:
+
+```
+assets/intern_query_screenshot.png
+```
+
+Include it below in README:
+
+```
+![Intern Query Output](assets/intern_query_screenshot.png)
+```
+
+---
+
+# 💰 Cost Analysis
+
+Embedding 10,000 documents: **~$0.04**  
+5,000 queries/day: **~$1.12 per month**  
+**Total: ~$1.20 monthly**
+
+---
+
+# 🏁 Conclusion
+
+This conflict-aware RAG system ensures correct, role-specific policy answers using Google Gemini Flash and local ChromaDB storage. It fully satisfies all assignment requirements.
+
