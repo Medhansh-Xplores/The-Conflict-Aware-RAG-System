@@ -78,3 +78,5 @@ def prepare_step1():
 
 if __name__ == "__main__":
     prepare_step1()
+
+!python step1_prepare_data.py
