@@ -192,7 +192,8 @@ python main.py
 # 📸 **Required Screenshot**
 
 ```
-![image alt](https://github.com/Medhansh-Xplores/The-Conflict-Aware-RAG-System/blob/main/intern_query_screenshot.png?raw=true)
+
+<img width="1325" height="641" alt="Screenshot 2025-11-25 201134" src="https://github.com/user-attachments/assets/4127238f-d21e-4208-81b9-e304543e19d3" />
 
 ```
 
