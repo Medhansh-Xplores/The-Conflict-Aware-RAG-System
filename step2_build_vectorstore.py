@@ -97,3 +97,5 @@ def build_vectorstore(jsonl_path="prepared_docs.jsonl", persist_dir="./chroma_st
 # -------------------------------------------
 if __name__ == "__main__":
     build_vectorstore()
+
+!python step2_build_vectorstore.py
