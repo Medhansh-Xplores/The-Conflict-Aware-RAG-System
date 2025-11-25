@@ -26,8 +26,8 @@ nebula-rag-conflict-aware/
 ├── requirements.txt
 ├── README.md
 │
-└── assets/
-    └── intern_query_screenshot.png
+└── intern_query_screenshot.png
+    
 ```
 
 ---
@@ -192,7 +192,7 @@ python main.py
 # 📸 **Required Screenshot**
 
 ```
-![Intern Query Output](intern_query_screenshot.png)
+![image alt]()
 
 ```
 
